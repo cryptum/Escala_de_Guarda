@@ -14,5 +14,6 @@ public class Recruta {
     String Endereco;
     String Data_nascimento;
     String Rg;
+    int Telefone_proprio;
     
 }

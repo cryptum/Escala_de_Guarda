@@ -5,6 +5,8 @@
  */
 package Controller;
 
+import View.PrincipalView;
+
 /**
  *
  * @author Danilo
@@ -15,7 +17,11 @@ public class Escala_de_Guarda {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new Escala_de_Guarda().executar();
+    }
+    
+    public void executar(){
+        PrincipalView pricipal = new PrincipalView();
     }
     
 }
