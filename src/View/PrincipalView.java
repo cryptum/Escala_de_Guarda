@@ -32,12 +32,14 @@ public class PrincipalView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu3 = new javax.swing.JMenu();
         pnl_principal = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        mnuSair = new javax.swing.JMenu();
+
+        jMenu3.setText("jMenu3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,18 +54,30 @@ public class PrincipalView extends javax.swing.JFrame {
             .addGap(0, 462, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("File");
+        jMenu1.setText("Adicionar");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
 
-        jMenuItem1.setText("jMenuItem1");
+        jMenuItem1.setText("Recruta");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
-
-        jMenuItem2.setText("jMenuItem2");
-        jMenu1.add(jMenuItem2);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Sair");
-        jMenuBar1.add(jMenu2);
+        mnuSair.setText("Sair");
+        mnuSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuSairActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(mnuSair);
 
         setJMenuBar(jMenuBar1);
 
@@ -81,14 +95,26 @@ public class PrincipalView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void mnuSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuSairActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_mnuSairActionPerformed
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+       
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        RecrutaView recruta = new RecrutaView();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenu mnuSair;
     private javax.swing.JPanel pnl_principal;
     // End of variables declaration//GEN-END:variables
 }
