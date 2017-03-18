@@ -4,7 +4,7 @@ package DAO;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import Model.RecrutaM;
-import java.util.logging.Level;
+
 
 
 public class RecrutaDAO {
@@ -12,7 +12,7 @@ public class RecrutaDAO {
     String sql;
     
     public void salvar(RecrutaM recruta)throws SQLException{
-        sql = "insert into Recruta values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        sql = "insert into recruta values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         pst = Conexao.getInstance().prepareStatement(sql);
         pst.setInt(1, 0);
         pst.setString(2, recruta.getNome());
@@ -22,8 +22,8 @@ public class RecrutaDAO {
         pst.setString(6, recruta.getCpf());
         pst.setString(7, recruta.getTelefone());
         pst.setString(8, recruta.getTelefone_recado());
-        pst.setString(9, recruta.getPai());
-        pst.setString(10, recruta.getMae());
+        pst.setString(9, recruta.getMae());
+        pst.setString(10, recruta.getPai());
         pst.setString(11, recruta.getNome_guerra());
         pst.setInt(12, recruta.getMaticula());
         pst.setInt(13, recruta.getChamada());

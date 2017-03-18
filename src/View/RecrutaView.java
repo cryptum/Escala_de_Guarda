@@ -212,6 +212,7 @@ public class RecrutaView extends javax.swing.JInternalFrame {
             } catch (SQLException ex) {
                 java.util.logging.Logger.getLogger(RecrutaView.class.getName()).log(Level.SEVERE, null, ex);
             }
+            JOptionPane.showMessageDialog(null, "Salvo com sucesso");
 
             
             

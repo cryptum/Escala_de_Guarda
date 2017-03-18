@@ -20,7 +20,7 @@ public class Conexao implements Serializable {
         senha = "root";
         
         // Defina aqui o nome do seu banco de dados
-        url = "jdbc:mysql://localhost:3306/Escala_de_Guarda";
+        url = "jdbc:mysql://localhost:3306/escala";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

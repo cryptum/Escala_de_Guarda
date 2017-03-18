@@ -105,6 +105,9 @@ public class PrincipalView extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         RecrutaView recruta = new RecrutaView();
+            pnl_principal.removeAll();
+            pnl_principal.add(recruta);
+            pnl_principal.updateUI();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
  

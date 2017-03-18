@@ -35,8 +35,8 @@ public class RecrutaM {
         this.Cpf = Cpf;
         this.Telefone = Telefone;
         this.Telefone_recado = Telefone_recado;
-        this.Pai = Pai;
         this.Mae = Mae;
+        this.Pai = Pai;
         this.Nome_guerra = Nome_guerra;
         this.Maticula = Maticula;
         this.Chamada = Chamada;
